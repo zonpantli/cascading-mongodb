@@ -1,4 +1,4 @@
-(defproject org.clojars.kovalo/cascading-mongodb "0.0.1-SNAPSHOT"
+(defproject org.clojars.kovalo/cascading-mongodb "0.0.4"
   :description "Cascading MongoDB Tap"
   :url "http://github.com/ifesdjeen/cascading-mongodb"
   :min-lein-version "2.0.0"
