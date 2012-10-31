@@ -3,7 +3,8 @@
   :url "http://github.com/ifesdjeen/cascading-mongodb"
   :min-lein-version "2.0.0"
   :dependencies [[org.apache.hadoop/hadoop-core "0.20.2-cdh3u3"]
-                 [org.mongodb/mongo-hadoop-streaming "1.0.0-SNAPSHOT"]
+                 [org.mongodb/mongo-hadoop-streaming "1.1.0-SNAPSHOT"]
+                 ;; [mongo-hadoop-streaming_cdh3u3  "1.0.0-rc0"]
                  [org.mongodb/mongo-hadoop-core_cdh3u3 "1.0.0-rc0"]
                  [cascading/cascading-core "2.0.2"]
                  [cascading/cascading-hadoop "2.0.2"]
@@ -19,7 +20,6 @@
   :test-selectors {:all     (constantly true)
                    :focus   :focus
                    :default (constantly true)}
-  :javac-options     ["-target" "1.7" "-source" "1.7"]
+  :javac-options   ["-target" "1.6" "-source" "1.6"]
   :repositories {"conjars" "http://conjars.org/repo/"
-                 "local" ~(str (.toURI (java.io.File. "repo")))
                  "cloudera" {:url "https://repository.cloudera.com/artifactory/cloudera-repos"}})
